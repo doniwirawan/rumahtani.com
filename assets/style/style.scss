@@ -7,6 +7,7 @@ $blacks : #424761;
 $whites : #F2EFEB;
 $purples : #743C7A;
 $greys : #8C8F9C;
+$hr-line : #E7E3DF;
 .blacks{
   color: $blacks;
 }
@@ -58,6 +59,11 @@ body{
   color: $purples;
   background-color: #FAF7F3;
 
+  
+}
+.sidenav a.active {
+    color: $purples;
+    background-color: #FAF7F3;
 }
 
 /* Style page content */
@@ -109,7 +115,7 @@ body{
    width: 100%;
    position: relative;
    padding: 20px;
-   margin-top: 110px;
+   margin-top: 70px;
 
    .row{
    position: relative;
@@ -132,13 +138,26 @@ body{
 }
 .announcement{
   background-color: white;
+  border-radius: 10px;
   
+}
+.about {
+  background-color: white;
+  border-radius: 10px;
+
 }
 .main{
   min-height: 1000px;
   overflow: auto;
   padding-right: 0;
   margin-right: 0;
+  .title{
+    font-weight: 600;
+  }
+}
+hr{
+  margin-top: -10px;
+  border: 1px solid $hr-line;
 }
 
 
