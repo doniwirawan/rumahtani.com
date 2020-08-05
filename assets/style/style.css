@@ -13,6 +13,14 @@
   color: #8C8F9C;
 }
 
+.whites {
+  color: #F2EFEB;
+}
+
+.purples {
+  color: #743C7A;
+}
+
 body {
   background-color: #F2EFEB;
 }
@@ -44,7 +52,7 @@ body {
   color: #424761;
   display: block;
   border-radius: 30px;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 /* When you mouse over the navigation links, change their color */
@@ -98,7 +106,8 @@ body {
 }
 
 .blog-post .title a {
-  font-weight: 500;
+  font-weight: 400;
+  font-size: .9em;
   color: #8C8F9C;
   text-transform: capitalize;
   text-decoration: none;
@@ -133,8 +142,19 @@ body {
 
 .tips {
   font-size: .8em;
-  font-weight: bold;
+  font-weight: 500;
   padding-top: 10px;
+}
+
+.announcement {
+  background-color: white;
+}
+
+.main {
+  min-height: 1000px;
+  overflow: auto;
+  padding-right: 0;
+  margin-right: 0;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */

@@ -13,6 +13,12 @@ $greys : #8C8F9C;
 .greys {
   color: $greys;
 }
+.whites {
+  color: $whites;
+}
+.purples {
+  color: $purples;
+}
 body{
   background-color: $whites;
 }
@@ -44,7 +50,7 @@ body{
   color: $blacks;
   display: block;
   border-radius: 30px;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 /* When you mouse over the navigation links, change their color */
@@ -87,7 +93,8 @@ body{
     color: $greys;
     text-transform: capitalize;
     a{
-      font-weight: 500;
+      font-weight: 400;
+      font-size: .9em;
       color: $greys;
       text-transform: capitalize;
       text-decoration: none;
@@ -120,8 +127,18 @@ body{
 }
 .tips{
   font-size: .8em;
-  font-weight: bold;
+  font-weight: 500;
   padding-top: 10px;
+}
+.announcement{
+  background-color: white;
+  
+}
+.main{
+  min-height: 1000px;
+  overflow: auto;
+  padding-right: 0;
+  margin-right: 0;
 }
 
 
