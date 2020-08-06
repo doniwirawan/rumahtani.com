@@ -292,7 +292,6 @@ a.read-more:hover {
   .main {
     margin-left: 25%;
     /* Same as the width of the sidebar */
-    padding: 0px 10px;
   }
   .blog {
     display: block;
@@ -418,6 +417,9 @@ a.read-more:hover {
   }
   .hidden {
     display: block;
+  }
+  #beranda {
+    margin-right: 70px;
   }
 }
 /*# sourceMappingURL=style.css.map */
