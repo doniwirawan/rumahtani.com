@@ -1,5 +1,5 @@
 $('#showAside').click(function(){
-    $('.sidenav').toggle();
+    $('.sidenav').show();
     $('.onclickshow').show();
     $('.main').css("filter", "blur(5px)");
     $('.navbar-lg-hidden').css("filter", "blur(5px)");

@@ -54,7 +54,8 @@ body {
 
 .onclickshow {
   display: none;
-  position: absolute;
+  position: fixed;
+  z-index: 999;
   left: 230px;
   top: 10px;
   background-color: white;
@@ -214,6 +215,35 @@ hr {
   border: 1px solid #E7E3DF;
 }
 
+a.read-more {
+  position: relative;
+  display: block;
+  bottom: 0;
+  right: 10px;
+  text-align: right;
+}
+
+a.read-more:hover {
+  text-decoration: none;
+  color: #743C7A;
+}
+
+.mini-icon-sdg {
+  position: relative;
+  z-index: 9;
+  display: block;
+  width: 40px;
+  top: 0;
+  right: 0;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-top: -55px;
+}
+
+.hidden {
+  display: none;
+}
+
 @media (min-width: 768px) {
   .navbar-lg-hidden {
     display: none;
@@ -249,10 +279,13 @@ hr {
   /* When you mouse over the navigation links, change their color */
   .sidenav a.special:hover {
     color: #743C7A;
-    background-color: #FAF7F3;
+    background-color: #faf7f37e;
   }
   .sidenav a.active {
     color: #743C7A;
+    background-color: #FAF7F3;
+  }
+  .sidenav a.active:hover {
     background-color: #FAF7F3;
   }
   /* Style page content */
@@ -348,6 +381,43 @@ hr {
   hr {
     margin-top: -10px;
     border: 1px solid #E7E3DF;
+  }
+  a.read-more {
+    position: relative;
+    display: block;
+    bottom: 0;
+    right: 10px;
+    text-align: right;
+  }
+  a.read-more:hover {
+    text-decoration: none;
+    color: #743C7A;
+  }
+  .mini-icon-sdg {
+    position: relative;
+    z-index: 9;
+    display: block;
+    width: 40px;
+    top: 0;
+    right: 0;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-top: -55px;
+  }
+  .onclickshow {
+    display: none;
+    position: fixed;
+    z-index: -999;
+    left: 230px;
+    top: 10px;
+    background-color: white;
+    color: #424761;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: none;
+  }
+  .hidden {
+    display: block;
   }
 }
 /*# sourceMappingURL=style.css.map */

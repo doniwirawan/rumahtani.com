@@ -46,7 +46,8 @@ body{
 
 .onclickshow {
   display: none;
-  position: absolute;
+  position: fixed;
+  z-index: 999;
   left: 230px;
   top: 10px;
   background-color: white;
@@ -204,6 +205,34 @@ hr {
   margin-top: -10px;
   border: 1px solid $hr-line;
 }
+ a.read-more {
+   position: relative;
+   display: block;
+   bottom: 0;
+   right: 10px;
+   text-align: right;
+
+   &:hover {
+     text-decoration: none;
+     color: $purples;
+   }
+   
+ }
+ .mini-icon-sdg {
+   position: relative;
+   z-index: 9;
+   display: block;
+   width: 40px;
+   top: 0;
+   right: 0;
+   border-radius: 10px;
+   margin-left: auto;
+   margin-top: -55px;
+
+ }
+.hidden{
+  display: none;
+}
  
 
 
@@ -272,7 +301,7 @@ hr {
   /* When you mouse over the navigation links, change their color */
   .sidenav a.special:hover {
     color: $purples;
-    background-color: #FAF7F3;
+    background-color: #faf7f37e;
 
 
   }
@@ -280,11 +309,16 @@ hr {
   .sidenav a.active {
     color: $purples;
     background-color: #FAF7F3;
+    &:hover{
+    background-color: #FAF7F3;
+
+    }
   }
 
   /* Style page content */
   .main {
     margin-left: 25%;
+    
     /* Same as the width of the sidebar */
     padding: 0px 10px;
   }
@@ -390,6 +424,44 @@ hr {
   hr {
     margin-top: -10px;
     border: 1px solid $hr-line;
+  }
+  a.read-more {
+    position: relative;
+    display: block;
+    bottom: 0;
+    right: 10px;
+    text-align: right;
+    &:hover{
+      text-decoration: none;
+      color: $purples;
+    }
+  }
+  .mini-icon-sdg{
+    position: relative;
+    z-index: 9;
+    display:block;
+    width: 40px;
+    top: 0;
+    right: 0;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-top: -55px;
+    
+  }
+  .onclickshow {
+    display: none;
+    position: fixed;
+    z-index: -999;
+    left: 230px;
+    top: 10px;
+    background-color: white;
+    color: $blacks;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: none;
+  }
+  .hidden {
+    display: block;
   }
 }
 
