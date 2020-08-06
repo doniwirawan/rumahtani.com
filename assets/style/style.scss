@@ -23,26 +23,56 @@ $hr-line : #E7E3DF;
 body{
   background-color: $whites;
 }
-/* The sidebar menu */
-.logo{
-  display: block;
-  width: 200px;
-  padding-bottom: 20px;
-}
-
-.sidenav {
-  width: 25%; 
-  position: fixed; 
-  z-index: 1; 
-  top: 0; 
-  left: 0;
-  background-color: $whites; 
-  overflow-x: hidden; 
-  padding-top: 20px;
-  padding-left: 80px;
+.navbar-lg-hidden{
+  display: flex;
+  flex-direction: row;
+  padding-top: 10px;
+  button{
+    width: 50px;
+    border: none;
+    margin-left: 15px;
+    border-radius: 5px;
+    &:hover{
+      background-color: white;
+    }
+  }
+  img{
+    width: 250px;
+    margin-left: 50px;
+  }
+  
   
 }
 
+.onclickshow {
+  display: none;
+  position: absolute;
+  left: 230px;
+  top: 10px;
+  background-color: white;
+  color: $blacks;
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: none;
+}
+.logo {
+  display: block;
+  width: 170px;
+  padding-bottom: 20px;
+  margin-left: 10px;
+}
+.sidenav {
+  width: 45%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: $whites;
+  overflow-x: hidden;
+  padding: 10px;
+  display: none;
+
+}
 /* The navigation menu links */
 .sidenav a.special {
   padding: 6px 8px 6px 16px;
@@ -50,7 +80,7 @@ body{
   font-size: 1.2em;
   color: $blacks;
   display: block;
-  border-radius: 30px;
+  border-radius: 10px;
   font-weight: 600;
 }
 
@@ -59,19 +89,20 @@ body{
   color: $purples;
   background-color: #FAF7F3;
 
-  
-}
-.sidenav a.active {
-    color: $purples;
-    background-color: #FAF7F3;
+
 }
 
-/* Style page content */
+.sidenav a.active {
+  color: $purples;
+  background-color: #FAF7F3;
+}
 .main {
-  margin-left: 25%; /* Same as the width of the sidebar */
+  // margin-left: 10px;
+  /* Same as the width of the sidebar */
   padding: 0px 10px;
 }
-.blog{
+
+.blog {
   display: block;
   width: 100%;
   height: 200px;
@@ -82,92 +113,284 @@ body{
   padding: 10px;
   margin-bottom: 50px;
 }
-.blog-post{
+
+.blog-post {
   display: inline-flex;
   flex-direction: row;
   padding: 5px;
-  img{
+
+  img {
     width: 40px;
     height: 40px;
     border-radius: 50%;
     margin-top: 5px;
   }
+
   .title {
-    
-    margin-left:10px;
+
+    margin-left: 10px;
     font-weight: 500;
     color: $greys;
     text-transform: capitalize;
-    a{
+
+    a {
       font-weight: 400;
-      font-size: .9em;
+      font-size: .8em;
       color: $greys;
       text-transform: capitalize;
       text-decoration: none;
-      &:hover{
+
+      &:hover {
         text-decoration: underline;
       }
     }
   }
 }
-.column{
-   display: block;
-   width: 100%;
-   position: relative;
-   padding: 20px;
-   margin-top: 70px;
 
-   .row{
-   position: relative;
-   margin-top: -20px;
-   }
-   a{
-     text-decoration: none;
-     color: $greys;
-     font-size: .7em;
-     &:hover{
-       text-decoration: underline;
-     }
-   }
+.column {
+  display: block;
+  width: 100%;
+  position: relative;
+  padding: 20px;
+  margin-top: 70px;
+
+  .row {
+    position: relative;
+    margin-top: -20px;
+  }
+
+  a {
+    text-decoration: none;
+    color: $greys;
+    font-size: .7em;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 
 }
-.tips{
+
+.tips {
   font-size: .8em;
   font-weight: 500;
   padding-top: 10px;
 }
-.announcement{
+
+.announcement {
   background-color: white;
   border-radius: 10px;
-  
+
 }
+
 .about {
   background-color: white;
   border-radius: 10px;
 
 }
-.main{
+
+.main {
   min-height: 1000px;
   overflow: auto;
   padding-right: 0;
   margin-right: 0;
-  .title{
+
+  .title {
     font-weight: 600;
   }
 }
-hr{
+
+hr {
   margin-top: -10px;
   border: 1px solid $hr-line;
 }
+ 
 
 
-/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 768px) {
+  .navbar-lg-hidden{
+    display: none;
+  }
+  /* The sidebar menu */
+  .logo {
+    display: block;
+    width: 200px;
+    padding-bottom: 20px;
+  }
+
+  .sidenav {
+    width: 25%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: $whites;
+    overflow-x: hidden;
+    padding-top: 20px;
+    padding-left: 80px;
+    display: block;
+
+  }
+
+  /* The navigation menu links */
+  .sidenav a.special {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 1.2em;
+    color: $blacks;
+    display: block;
+    border-radius: 30px;
+    font-weight: 600;
+  }
+
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a.special:hover {
+    color: $purples;
+    background-color: #FAF7F3;
+
+
+  }
+
+  .sidenav a.active {
+    color: $purples;
+    background-color: #FAF7F3;
+  }
+
+  /* Style page content */
+  .main {
+    margin-left: 25%;
+    /* Same as the width of the sidebar */
+    padding: 0px 10px;
+  }
+
+  .blog {
+    display: block;
+    width: 100%;
+    height: 200px;
+    position: relative;
+    border-radius: 10px;
+    background-color: white;
+    overflow: auto;
+    padding: 10px;
+    margin-bottom: 50px;
+  }
+
+  .blog-post {
+    display: inline-flex;
+    flex-direction: row;
+    padding: 5px;
+
+    img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin-top: 5px;
+    }
+
+    .title {
+
+      margin-left: 10px;
+      font-weight: 500;
+      color: $greys;
+      text-transform: capitalize;
+
+      a {
+        font-weight: 400;
+        font-size: .9em;
+        color: $greys;
+        text-transform: capitalize;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  .column {
+    display: block;
+    width: 100%;
+    position: relative;
+    padding: 20px;
+    margin-top: 70px;
+
+    .row {
+      position: relative;
+      margin-top: -20px;
+    }
+
+    a {
+      text-decoration: none;
+      color: $greys;
+      font-size: .7em;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+  }
+
+  .tips {
+    font-size: .8em;
+    font-weight: 500;
+    padding-top: 10px;
+  }
+
+  .announcement {
+    background-color: white;
+    border-radius: 10px;
+
+  }
+
+  .about {
+    background-color: white;
+    border-radius: 10px;
+
+  }
+
+  .main {
+    min-height: 1000px;
+    overflow: auto;
+    padding-right: 0;
+    margin-right: 0;
+
+    .title {
+      font-weight: 600;
+    }
+  }
+
+  hr {
+    margin-top: -10px;
+    border: 1px solid $hr-line;
+  }
 }
-
-    
-    
 
 

@@ -25,23 +25,62 @@ body {
   background-color: #F2EFEB;
 }
 
-/* The sidebar menu */
+.navbar-lg-hidden {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding-top: 10px;
+}
+
+.navbar-lg-hidden button {
+  width: 50px;
+  border: none;
+  margin-left: 15px;
+  border-radius: 5px;
+}
+
+.navbar-lg-hidden button:hover {
+  background-color: white;
+}
+
+.navbar-lg-hidden img {
+  width: 250px;
+  margin-left: 50px;
+}
+
+.onclickshow {
+  display: none;
+  position: absolute;
+  left: 230px;
+  top: 10px;
+  background-color: white;
+  color: #424761;
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: none;
+}
+
 .logo {
   display: block;
-  width: 200px;
+  width: 170px;
   padding-bottom: 20px;
+  margin-left: 10px;
 }
 
 .sidenav {
-  width: 25%;
+  width: 45%;
   position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
   background-color: #F2EFEB;
   overflow-x: hidden;
-  padding-top: 20px;
-  padding-left: 80px;
+  padding: 10px;
+  display: none;
 }
 
 /* The navigation menu links */
@@ -51,7 +90,7 @@ body {
   font-size: 1.2em;
   color: #424761;
   display: block;
-  border-radius: 30px;
+  border-radius: 10px;
   font-weight: 600;
 }
 
@@ -66,9 +105,7 @@ body {
   background-color: #FAF7F3;
 }
 
-/* Style page content */
 .main {
-  margin-left: 25%;
   /* Same as the width of the sidebar */
   padding: 0px 10px;
 }
@@ -112,7 +149,7 @@ body {
 
 .blog-post .title a {
   font-weight: 400;
-  font-size: .9em;
+  font-size: .8em;
   color: #8C8F9C;
   text-transform: capitalize;
   text-decoration: none;
@@ -177,13 +214,140 @@ hr {
   border: 1px solid #E7E3DF;
 }
 
-/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-  .sidenav {
-    padding-top: 15px;
+@media (min-width: 768px) {
+  .navbar-lg-hidden {
+    display: none;
   }
-  .sidenav a {
-    font-size: 18px;
+  /* The sidebar menu */
+  .logo {
+    display: block;
+    width: 200px;
+    padding-bottom: 20px;
+  }
+  .sidenav {
+    width: 25%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #F2EFEB;
+    overflow-x: hidden;
+    padding-top: 20px;
+    padding-left: 80px;
+    display: block;
+  }
+  /* The navigation menu links */
+  .sidenav a.special {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 1.2em;
+    color: #424761;
+    display: block;
+    border-radius: 30px;
+    font-weight: 600;
+  }
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a.special:hover {
+    color: #743C7A;
+    background-color: #FAF7F3;
+  }
+  .sidenav a.active {
+    color: #743C7A;
+    background-color: #FAF7F3;
+  }
+  /* Style page content */
+  .main {
+    margin-left: 25%;
+    /* Same as the width of the sidebar */
+    padding: 0px 10px;
+  }
+  .blog {
+    display: block;
+    width: 100%;
+    height: 200px;
+    position: relative;
+    border-radius: 10px;
+    background-color: white;
+    overflow: auto;
+    padding: 10px;
+    margin-bottom: 50px;
+  }
+  .blog-post {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 5px;
+  }
+  .blog-post img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-top: 5px;
+  }
+  .blog-post .title {
+    margin-left: 10px;
+    font-weight: 500;
+    color: #8C8F9C;
+    text-transform: capitalize;
+  }
+  .blog-post .title a {
+    font-weight: 400;
+    font-size: .9em;
+    color: #8C8F9C;
+    text-transform: capitalize;
+    text-decoration: none;
+  }
+  .blog-post .title a:hover {
+    text-decoration: underline;
+  }
+  .column {
+    display: block;
+    width: 100%;
+    position: relative;
+    padding: 20px;
+    margin-top: 70px;
+  }
+  .column .row {
+    position: relative;
+    margin-top: -20px;
+  }
+  .column a {
+    text-decoration: none;
+    color: #8C8F9C;
+    font-size: .7em;
+  }
+  .column a:hover {
+    text-decoration: underline;
+  }
+  .tips {
+    font-size: .8em;
+    font-weight: 500;
+    padding-top: 10px;
+  }
+  .announcement {
+    background-color: white;
+    border-radius: 10px;
+  }
+  .about {
+    background-color: white;
+    border-radius: 10px;
+  }
+  .main {
+    min-height: 1000px;
+    overflow: auto;
+    padding-right: 0;
+    margin-right: 0;
+  }
+  .main .title {
+    font-weight: 600;
+  }
+  hr {
+    margin-top: -10px;
+    border: 1px solid #E7E3DF;
   }
 }
 /*# sourceMappingURL=style.css.map */
