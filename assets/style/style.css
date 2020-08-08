@@ -74,6 +74,7 @@ body {
 
 .sidenav {
   width: 45%;
+  height: 100%;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -253,13 +254,16 @@ a.read-more:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 5px;
+  margin: 1px;
 }
 
 .btn-purples {
@@ -283,6 +287,12 @@ a.read-more:hover {
   display: none;
 }
 
+.bottom {
+  position: absolute;
+  display: block;
+  bottom: 5px;
+}
+
 @media (min-width: 768px) {
   .navbar-lg-hidden {
     display: none;
@@ -295,6 +305,7 @@ a.read-more:hover {
   }
   .sidenav {
     width: 25%;
+    height: 100%;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -480,11 +491,16 @@ a.read-more:hover {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin: 5px;
+    margin: 0px;
   }
   .hidden-tentang,
   .hidden-misi {
     display: none;
+  }
+  .bottom {
+    position: absolute;
+    display: block;
+    bottom: 5px;
   }
 }
 /*# sourceMappingURL=style.css.map */

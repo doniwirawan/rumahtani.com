@@ -64,6 +64,8 @@ body{
 }
 .sidenav {
   width: 45%;
+  height :100%;
+
   position: fixed;
   z-index: 1;
   top: 0;
@@ -237,12 +239,12 @@ hr {
   position: relative;
   display: flex;
   flex-direction: row;
-  // justify-content: space-between;
+  justify-content: space-between;
 }
 
 .card {
   display: flex;
-  margin: 5px;
+  margin: 1px;
 }
 .btn-purples{
   background-color: $purples;
@@ -259,6 +261,11 @@ hr {
 .hidden-img{
   width: 100%;
   display: none;
+}
+.bottom{
+  position: absolute;
+  display: block;
+  bottom:5px;
 }
 
 
@@ -301,6 +308,7 @@ hr {
 
   .sidenav {
     width: 25%;
+    height :100%;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -505,11 +513,16 @@ hr {
   }
   .card{
     display: flex;
-    margin: 5px;
+    margin: 0px;
   }
   .hidden-tentang,
   .hidden-misi {
     display: none;
+  }
+  .bottom{
+    position: absolute;
+    display: block;
+    bottom: 5px;
   }
 }
 
