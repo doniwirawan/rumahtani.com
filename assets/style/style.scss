@@ -20,6 +20,9 @@ $hr-line : #E7E3DF;
 .purples {
   color: $purples;
 }
+html{
+  scroll-behavior: smooth;
+}
 body{
   background-color: $whites;
 }
