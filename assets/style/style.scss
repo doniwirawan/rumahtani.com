@@ -233,7 +233,33 @@ hr {
 .hidden{
   display: none;
 }
- 
+.rows {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  // justify-content: space-between;
+}
+
+.card {
+  display: flex;
+  margin: 5px;
+}
+.btn-purples{
+  background-color: $purples;
+  &:hover{
+    background-color: $greys;
+  }
+}
+.hidden-tentang,.hidden-misi{
+  display: none;
+}
+.read-more{
+  cursor: pointer;
+}
+.hidden-img{
+  width: 100%;
+  display: none;
+}
 
 
 
@@ -406,6 +432,7 @@ hr {
 
   .about {
     display: relative;
+    width: 100%;
     background-color: white;
     border-radius: 10px;
 
@@ -475,6 +502,14 @@ hr {
     display: flex;
     flex-direction: row;
     // justify-content: space-between;
+  }
+  .card{
+    display: flex;
+    margin: 5px;
+  }
+  .hidden-tentang,
+  .hidden-misi {
+    display: none;
   }
 }
 

@@ -11,3 +11,14 @@ $('.onclickshow').click(function () {
     $('.navbar-lg-hidden').css("filter", "blur(0)");
 
 })
+
+$('.about-read-more').click(function(){
+    $('.hidden-tentang').show();
+})
+$('.misi-read-more').click(function () {
+    $('.hidden-misi').show();
+})
+$('.sdg-read-more').click(function () {
+    $('.hidden-img').show();
+    // alert('hello')
+})

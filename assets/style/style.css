@@ -244,6 +244,45 @@ a.read-more:hover {
   display: none;
 }
 
+.rows {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 5px;
+}
+
+.btn-purples {
+  background-color: #743C7A;
+}
+
+.btn-purples:hover {
+  background-color: #8C8F9C;
+}
+
+.hidden-tentang, .hidden-misi {
+  display: none;
+}
+
+.read-more {
+  cursor: pointer;
+}
+
+.hidden-img {
+  width: 100%;
+  display: none;
+}
+
 @media (min-width: 768px) {
   .navbar-lg-hidden {
     display: none;
@@ -367,6 +406,7 @@ a.read-more:hover {
   }
   .about {
     display: relative;
+    width: 100%;
     background-color: white;
     border-radius: 10px;
   }
@@ -435,6 +475,16 @@ a.read-more:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+  }
+  .card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 5px;
+  }
+  .hidden-tentang,
+  .hidden-misi {
+    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */
