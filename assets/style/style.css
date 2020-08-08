@@ -361,10 +361,12 @@ a.read-more:hover {
     padding-top: 10px;
   }
   .announcement {
+    display: relative;
     background-color: white;
     border-radius: 10px;
   }
   .about {
+    display: relative;
     background-color: white;
     border-radius: 10px;
   }
@@ -423,6 +425,16 @@ a.read-more:hover {
   }
   .sdg-logo {
     width: 200px;
+  }
+  .rows {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 /*# sourceMappingURL=style.css.map */

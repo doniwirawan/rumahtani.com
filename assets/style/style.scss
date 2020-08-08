@@ -398,12 +398,14 @@ hr {
   }
 
   .announcement {
+    display: relative;
     background-color: white;
     border-radius: 10px;
 
   }
 
   .about {
+    display: relative;
     background-color: white;
     border-radius: 10px;
 
@@ -467,6 +469,12 @@ hr {
   }
   .sdg-logo{
     width: 200px;
+  }
+  .rows{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    // justify-content: space-between;
   }
 }
 
