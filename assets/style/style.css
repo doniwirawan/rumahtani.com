@@ -278,7 +278,8 @@ a.read-more:hover {
   background-color: #8C8F9C;
 }
 
-.hidden-tentang, .hidden-misi {
+.hidden-tentang,
+.hidden-misi {
   display: none;
 }
 

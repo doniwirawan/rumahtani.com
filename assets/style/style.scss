@@ -1,50 +1,61 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
 $blacks : #424761;
 $whites : #F2EFEB;
 $purples : #743C7A;
 $greys : #8C8F9C;
 $hr-line : #E7E3DF;
-.blacks{
+
+.blacks {
   color: $blacks;
 }
+
 .greys {
   color: $greys;
 }
+
 .whites {
   color: $whites;
 }
+
 .purples {
   color: $purples;
 }
-html{
+
+html {
   scroll-behavior: smooth;
 }
-body{
+
+body {
   background-color: $whites;
 }
-.navbar-lg-hidden{
+
+.navbar-lg-hidden {
   display: flex;
   flex-direction: row;
   padding-top: 10px;
-  button{
+
+  button {
     width: 50px;
     border: none;
     margin-left: 15px;
     border-radius: 5px;
-    &:hover{
+
+    &:hover {
       background-color: white;
     }
   }
-  img{
+
+  img {
     width: 250px;
     margin-left: 50px;
   }
-  
-  
+
+
 }
 
 .onclickshow {
@@ -59,15 +70,17 @@ body{
   border-radius: 10px;
   border: none;
 }
+
 .logo {
   display: block;
   width: 170px;
   padding-bottom: 20px;
   margin-left: 10px;
 }
+
 .sidenav {
   width: 45%;
-  height :100%;
+  height: 100%;
 
   position: fixed;
   z-index: 1;
@@ -79,6 +92,7 @@ body{
   display: none;
 
 }
+
 /* The navigation menu links */
 .sidenav a.special {
   padding: 6px 8px 6px 16px;
@@ -102,6 +116,7 @@ body{
   color: $purples;
   background-color: #FAF7F3;
 }
+
 .main {
   // margin-left: 10px;
   /* Same as the width of the sidebar */
@@ -210,34 +225,38 @@ hr {
   margin-top: -10px;
   border: 1px solid $hr-line;
 }
- a.read-more {
-   position: relative;
-   display: block;
-   bottom: 0;
-   right: 10px;
-   text-align: right;
 
-   &:hover {
-     text-decoration: none;
-     color: $purples;
-   }
-   
- }
- .mini-icon-sdg {
-   position: relative;
-   z-index: 9;
-   display: block;
-   width: 40px;
-   top: 0;
-   right: 0;
-   border-radius: 10px;
-   margin-left: auto;
-   margin-top: -55px;
+a.read-more {
+  position: relative;
+  display: block;
+  bottom: 0;
+  right: 10px;
+  text-align: right;
 
- }
-.hidden{
+  &:hover {
+    text-decoration: none;
+    color: $purples;
+  }
+
+}
+
+.mini-icon-sdg {
+  position: relative;
+  z-index: 9;
+  display: block;
+  width: 40px;
+  top: 0;
+  right: 0;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-top: -55px;
+
+}
+
+.hidden {
   display: none;
 }
+
 .rows {
   position: relative;
   display: flex;
@@ -249,26 +268,33 @@ hr {
   display: flex;
   margin: 1px;
 }
-.btn-purples{
+
+.btn-purples {
   background-color: $purples;
-  &:hover{
+
+  &:hover {
     background-color: $greys;
   }
 }
-.hidden-tentang,.hidden-misi{
+
+.hidden-tentang,
+.hidden-misi {
   display: none;
 }
-.read-more{
+
+.read-more {
   cursor: pointer;
 }
-.hidden-img{
+
+.hidden-img {
   width: 100%;
   display: none;
 }
-.bottom{
+
+.bottom {
   position: absolute;
   display: block;
-  bottom:5px;
+  bottom: 5px;
 }
 
 
@@ -299,9 +325,10 @@ hr {
 
 
 @media (min-width: 768px) {
-  .navbar-lg-hidden{
+  .navbar-lg-hidden {
     display: none;
   }
+
   /* The sidebar menu */
   .logo {
     display: block;
@@ -311,7 +338,7 @@ hr {
 
   .sidenav {
     width: 25%;
-    height :100%;
+    height: 100%;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -346,8 +373,9 @@ hr {
   .sidenav a.active {
     color: $purples;
     background-color: #FAF7F3;
-    &:hover{
-    background-color: #FAF7F3;
+
+    &:hover {
+      background-color: #FAF7F3;
 
     }
   }
@@ -355,7 +383,7 @@ hr {
   /* Style page content */
   .main {
     margin-left: 25%;
-    
+
     /* Same as the width of the sidebar */
   }
 
@@ -464,29 +492,33 @@ hr {
     margin-top: -10px;
     border: 1px solid $hr-line;
   }
+
   a.read-more {
     position: relative;
     display: block;
     bottom: 0;
     right: 10px;
     text-align: right;
-    &:hover{
+
+    &:hover {
       text-decoration: none;
       color: $purples;
     }
   }
-  .mini-icon-sdg{
+
+  .mini-icon-sdg {
     position: relative;
     z-index: 9;
-    display:block;
+    display: block;
     width: 40px;
     top: 0;
     right: 0;
     border-radius: 10px;
     margin-left: auto;
     margin-top: -55px;
-    
+
   }
+
   .onclickshow {
     display: none;
     position: fixed;
@@ -499,34 +531,39 @@ hr {
     border-radius: 10px;
     border: none;
   }
+
   .hidden {
     display: block;
   }
-  #beranda{
+
+  #beranda {
     margin-right: 70px;
   }
-  .sdg-logo{
+
+  .sdg-logo {
     width: 200px;
   }
-  .rows{
+
+  .rows {
     position: relative;
     display: flex;
     flex-direction: row;
     // justify-content: space-between;
   }
-  .card{
+
+  .card {
     display: flex;
     margin: 0px;
   }
+
   .hidden-tentang,
   .hidden-misi {
     display: none;
   }
-  .bottom{
+
+  .bottom {
     position: absolute;
     display: block;
     bottom: 5px;
   }
 }
-
-

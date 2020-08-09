@@ -1,4 +1,4 @@
-$('#showAside').click(function(){
+$('#showAside').click(function () {
     $('.sidenav').show();
     $('.onclickshow').show();
     $('.main').css("filter", "blur(5px)");
@@ -12,7 +12,7 @@ $('.onclickshow').click(function () {
 
 })
 
-$('.about-read-more').click(function(){
+$('.about-read-more').click(function () {
     $('.hidden-tentang').toggle(500);
 })
 $('.misi-read-more').click(function () {
@@ -20,5 +20,4 @@ $('.misi-read-more').click(function () {
 })
 $('.sdg-read-more').click(function () {
     $('.hidden-img').toggle(500);
-    // alert('hello')
 })
