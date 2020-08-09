@@ -13,12 +13,12 @@ $('.onclickshow').click(function () {
 })
 
 $('.about-read-more').click(function(){
-    $('.hidden-tentang').show();
+    $('.hidden-tentang').show(500);
 })
 $('.misi-read-more').click(function () {
-    $('.hidden-misi').show();
+    $('.hidden-misi').show(500);
 })
 $('.sdg-read-more').click(function () {
-    $('.hidden-img').show();
+    $('.hidden-img').show(500);
     // alert('hello')
 })
