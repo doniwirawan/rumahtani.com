@@ -298,6 +298,14 @@ a.read-more:hover {
   bottom: 5px;
 }
 
+.blog-headline {
+  font-weight: 600;
+}
+
+.blog-image {
+  width: 100%;
+}
+
 @media (min-width: 768px) {
   .navbar-lg-hidden {
     display: none;
