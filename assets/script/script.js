@@ -21,3 +21,6 @@ $('.misi-read-more').click(function () {
 $('.sdg-read-more').click(function () {
     $('.hidden-img').toggle(500);
 })
+$('.sdg-read-more'.click(function(){
+    $('.hidden-p').toggle(500);
+}))
