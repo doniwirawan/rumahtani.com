@@ -328,7 +328,7 @@ a.read-more:hover {
 .author .author-name {
   font-size: 1.2em;
   font-weight: 600;
-  margin: 3px 10px;
+  margin: 3px 0;
 }
 
 .author .author-image-wrapper {
@@ -350,8 +350,8 @@ a.read-more:hover {
   font-weight: bold;
 }
 
-.blogxx p {
-  text-indent: 17px;
+.blogxx p:not(.author-name) {
+  text-indent: 15px;
 }
 
 .main {
@@ -605,5 +605,33 @@ a.read-more:hover {
     width: 70%;
     height: auto;
   }
+  .activesss {
+    font-weight: bold;
+    color: #F2EFEB;
+    background-color: #743C7A;
+    border-radius: 10px;
+  }
+  .activesss .title a {
+    color: #F2EFEB;
+  }
+  .activesss img {
+    border: 2px solid #F2EFEB;
+  }
+}
+
+.blacks {
+  color: #424761;
+}
+
+.greys {
+  color: #8C8F9C;
+}
+
+.whites {
+  color: #F2EFEB;
+}
+
+.purples {
+  color: #743C7A;
 }
 /*# sourceMappingURL=style.css.map */
