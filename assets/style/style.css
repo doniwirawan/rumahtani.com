@@ -328,7 +328,7 @@ a.read-more:hover {
 .author .author-name {
   font-size: 1.2em;
   font-weight: 600;
-  margin: 3px 0;
+  margin: 3px 10px;
 }
 
 .author .author-image-wrapper {
@@ -357,6 +357,21 @@ a.read-more:hover {
 .main {
   width: 100%;
   height: auto;
+}
+
+.activesss {
+  font-weight: bold;
+  color: #F2EFEB;
+  background-color: #743C7A;
+  border-radius: 10px;
+}
+
+.activesss .title a {
+  color: #F2EFEB;
+}
+
+.activesss img {
+  border: 2px solid #F2EFEB;
 }
 
 @media (min-width: 768px) {

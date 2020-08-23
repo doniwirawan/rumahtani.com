@@ -319,7 +319,7 @@ a.read-more {
   .author-name {
     font-size: 1.2em;
     font-weight: 600;
-    margin: 3px 0;
+    margin: 3px 10px;
   }
 
   .author-image-wrapper {
@@ -345,6 +345,20 @@ a.read-more {
 .main {
   width: 100%;
   height: auto;
+}
+.activesss {
+  font-weight: bold;
+  color: $whites;
+  background-color: $purples;
+  border-radius: 10px;
+
+  .title a {
+    color: $whites;
+  }
+
+  img {
+    border: 2px solid $whites;
+  }
 }
 
 
