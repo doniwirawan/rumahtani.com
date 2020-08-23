@@ -342,6 +342,11 @@ a.read-more {
 .blogxx p:not(.author-name){
   text-indent: 15px;
 }
+.blogxx{
+  background-color: white;
+  border-radius: 10px;
+  margin: 30px 0;
+}
 .main {
   width: 100%;
   height: auto;
@@ -834,6 +839,7 @@ a.read-more {
 
         img {
           width: 100%;
+          min-height: 200px;
         }
 
         a {

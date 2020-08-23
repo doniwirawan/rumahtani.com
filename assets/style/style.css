@@ -354,6 +354,12 @@ a.read-more:hover {
   text-indent: 15px;
 }
 
+.blogxx {
+  background-color: white;
+  border-radius: 10px;
+  margin: 30px 0;
+}
+
 .main {
   width: 100%;
   height: auto;
@@ -827,6 +833,7 @@ a.read-more:hover {
   }
   .blog-container-index .blog-row-index .blogs-item img {
     width: 100%;
+    min-height: 200px;
   }
   .blog-container-index .blog-row-index .blogs-item a {
     color: #743C7A;
