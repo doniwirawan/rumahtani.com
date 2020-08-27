@@ -80,6 +80,8 @@ body {
 .sidenav {
   width: 75%;
   height: 100%;
+  -webkit-box-shadow: 5px 1px 30px #424761;
+          box-shadow: 5px 1px 30px #424761;
   position: fixed;
   z-index: 1;
   top: 0;
