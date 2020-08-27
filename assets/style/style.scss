@@ -62,13 +62,14 @@ body {
   display: none;
   position: fixed;
   z-index: 999;
-  left: 230px;
+  left: 300px;
   top: 10px;
   background-color: white;
   color: $blacks;
   padding: 5px 10px;
   border-radius: 10px;
   border: none;
+  border:1px solid $blacks;
 }
 
 .logo {
@@ -79,7 +80,7 @@ body {
 }
 
 .sidenav {
-  width: 45%;
+  width: 75%;
   height: 100%;
 
   position: fixed;
@@ -452,7 +453,9 @@ a.read-more {
 .blogxx{
   padding: 10px;
 }
-
+.unshowingside{
+  display: none;
+}
 
 
 
@@ -848,6 +851,9 @@ a.read-more {
         }
       }
     }
+  }
+  .showsx{
+    display: block;
   }
 }
 
