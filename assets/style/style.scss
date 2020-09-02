@@ -456,6 +456,9 @@ a.read-more {
 .unshowingside{
   display: none;
 }
+div.sidenav.showingsidenav{
+  display:block;
+}
 
 
 
@@ -857,7 +860,9 @@ a.read-more {
   .showsx{
     display: block;
   }
-
+  div.sidenav.showingsidenav {
+    display: block;
+  }
 }
 
 

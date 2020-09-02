@@ -495,6 +495,10 @@ a.read-more:hover {
   display: none;
 }
 
+div.sidenav.showingsidenav {
+  display: block;
+}
+
 @media (min-width: 768px) {
   .navbar-lg-hidden {
     display: none;
@@ -849,6 +853,9 @@ a.read-more:hover {
     font-weight: 600;
   }
   .showsx {
+    display: block;
+  }
+  div.sidenav.showingsidenav {
     display: block;
   }
 }
