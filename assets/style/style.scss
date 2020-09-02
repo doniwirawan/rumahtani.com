@@ -69,7 +69,7 @@ body {
   padding: 5px 10px;
   border-radius: 10px;
   border: none;
-  border:1px solid $blacks;
+  border: 1px solid $blacks;
 }
 
 .logo {
@@ -82,7 +82,7 @@ body {
 .sidenav {
   width: 75%;
   height: 100%;
-  box-shadow: 5px 1px 30px $blacks ;
+  box-shadow: 5px 1px 30px $blacks;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -297,22 +297,27 @@ a.read-more {
   display: block;
   bottom: 5px;
 }
-.blog-headline{
+
+.blog-headline {
   font-weight: 600;
 }
+
 .image-wrapper {
   width: 100%;
   height: 300px;
   overflow: hidden;
   border-radius: 10px;
-  img{
+
+  img {
     width: 100%;
   }
 }
-.main h2{
+
+.main h2 {
   font-size: 3em;
   text-align: left;
 }
+
 .author {
   display: flex;
   position: relative;
@@ -336,22 +341,27 @@ a.read-more {
     }
   }
 }
+
 .first-letter {
   font-size: 2em;
   font-weight: bold;
 }
-.blogxx p:not(.author-name){
+
+.blogxx p:not(.author-name) {
   text-indent: 15px;
 }
-.blogxx{
+
+.blogxx {
   background-color: white;
   border-radius: 10px;
   margin: 30px 0;
 }
+
 .main {
   width: 100%;
   height: auto;
 }
+
 .activesss {
   font-weight: bold;
   color: $whites;
@@ -366,6 +376,7 @@ a.read-more {
     border: 2px solid $whites;
   }
 }
+
 .blog-container {
   position: relative;
   display: flex;
@@ -387,7 +398,7 @@ a.read-more {
       background-color: white;
       padding: 10px;
       border-radius: 10px;
-      margin:  5px 0;
+      margin: 5px 0;
 
       .image-item-wrapper {
         width: 100%;
@@ -408,6 +419,7 @@ a.read-more {
     }
   }
 }
+
 .blog-container-index {
   position: relative;
   display: flex;
@@ -450,14 +462,17 @@ a.read-more {
     }
   }
 }
-.blogxx{
+
+.blogxx {
   padding: 10px;
 }
-.unshowingside{
+
+.unshowingside {
   display: none;
 }
-div.sidenav.showingsidenav{
-  display:block;
+
+div.sidenav.showingsidenav {
+  display: block;
 }
 
 
@@ -511,7 +526,7 @@ div.sidenav.showingsidenav{
     padding-top: 20px;
     padding-left: 80px;
     display: block;
-  box-shadow: none;
+    box-shadow: none;
 
 
   }
@@ -731,65 +746,78 @@ div.sidenav.showingsidenav{
     display: block;
     bottom: 5px;
   }
-  .image-wrapper{
+
+  .image-wrapper {
     width: 100%;
     height: 500px;
     overflow: hidden;
     border-radius: 10px;
   }
-  .author{
+
+  .author {
     display: flex;
     position: relative;
-    .author-name{
+
+    .author-name {
       font-size: 1.2em;
       font-weight: 600;
       margin: 3px 10px;
     }
-    .author-image-wrapper{
+
+    .author-image-wrapper {
       position: relative;
       width: 40px;
       height: 40px;
       overflow: hidden;
       border-radius: 50%;
-      img{
+
+      img {
         width: 40px;
         filter: grayscale(100%);
       }
     }
   }
-  .first-letter{
+
+  .first-letter {
     font-size: 4em;
     font-weight: bold;
   }
-  .main{
+
+  .main {
     width: 70%;
     height: auto;
   }
+
   .activesss {
     font-weight: bold;
     color: $whites;
     background-color: $purples;
     border-radius: 10px;
-    .title a{
+
+    .title a {
       color: $whites;
     }
-    img{
+
+    img {
       border: 2px solid $whites;
     }
   }
-  .blog-container{
+
+  .blog-container {
     position: relative;
     display: flex;
     flex-direction: column;
     width: 100%;
     min-height: 500px;
-    .blog-row{
+
+    .blog-row {
       position: relative;
       display: flex;
       flex-direction: row;
       width: 100%;
-      margin:10px 0;
-      .blogs-item{
+      margin: 10px 0;
+
+      .blogs-item {
         position: relative;
         width: 25%;
         overflow: hidden;
@@ -797,17 +825,20 @@ div.sidenav.showingsidenav{
         padding: 10px;
         border-radius: 10px;
         margin: 0 5px;
-        .image-item-wrapper{
+
+        .image-item-wrapper {
           width: 100%;
           overflow: hidden;
           height: 190px;
-        border-radius: 6px;
+          border-radius: 6px;
 
         }
-        img{
+
+        img {
           width: 100%;
         }
-        a{
+
+        a {
           color: $purples;
           font-weight: 600;
         }
@@ -828,6 +859,7 @@ div.sidenav.showingsidenav{
       flex-direction: row;
       width: 100%;
       margin: 5px 0;
+
       .blogs-item {
         position: relative;
         width: 25%;
@@ -857,9 +889,11 @@ div.sidenav.showingsidenav{
       }
     }
   }
-  .showsx{
+
+  .showsx {
     display: block;
   }
+
   div.sidenav.showingsidenav {
     display: block;
   }
