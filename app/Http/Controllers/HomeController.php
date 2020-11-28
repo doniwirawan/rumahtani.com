@@ -24,13 +24,13 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $artikel = DB::table('artikel')->get();
+        $artikel = DB::table('artikel')->paginate(4);
         
         return view('beranda',['artikel' => $artikel ]);
     }
     public function blog()
     {
-        $artikel = DB::table('artikel')->get();
+        $artikel = DB::table('artikel')->paginate(4);
         
         return view('blog',['artikel' => $artikel ]);
     }
