@@ -142,14 +142,18 @@
             <div class="blog-container-index pr-4">
                 <div class="blog-row-index">
                     @foreach($artikel as $p)
-                <div class="blogs-item ">
+    <input type="hidden" name="id" value="{{ $p->id }}"> <br/>
+                 <a href="/blog/konten/{{ $p->id }}">
+                     <div class="blogs-item ">
                     <div class="image-item-wrapper mb-1">
                         <img src="{{ $p->gambar}}"
                             alt="{{ $p->judul}}">
                     </div>
-                    <a href="content1.html" class="blog-item-title h4">{{ $p->judul}}</a>
+                    <a href="/blog/konten/{{ $p->id }}" class="blog-item-title h4">{{ $p->judul}}</a>
                     <p class="desc-blog-item mt-1">{{ $p->isi}}</p>
                 </div>
+                 </a>   
+                
                 <!-- berakhir looping disini -->
                 @endforeach
                 </div>

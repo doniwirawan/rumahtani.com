@@ -16,8 +16,11 @@ use App\Http\Controllers\HomeController;
 */
 
 // Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('index');
-Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('beranda');
-Route::get('/blog', [App\Http\Controllers\HomeController::class, 'blog'])->name('blog');
+Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('berandax ga ngaruh');
+Route::get('/blog', [App\Http\Controllers\HomeController::class, 'blog'])->name('blogx ga ngaruh');
+Route::get('/blog/konten/{id}', [App\Http\Controllers\HomeController::class, 'konten'])->name('kontenx ga ngaruh');
+// Route::get('/admin_konten/edit/{id}', [App\Http\Controllers\HomeController::class, 'edit'])->name('edit');
+
 
 // Route::get('/', function () {
 //     return view('beranda');

@@ -48,12 +48,16 @@
         <div class="blog">
 
             @foreach($artikel as $p)
-                <div class="blog-post">
+    <input type="hidden" name="id" value="{{ $p->id }}"> <br/>
+            <a href="/blog/konten/{{ $p->id }}">
+              <div class="blog-post">
                     <img src="{{ $p->gambar}}"
                         alt="{{ $p->judul}}">
-                    <p class="title"><a href="{{ url('blog') }}">{{ $p->judul}}</a> </p>
+                    <p class="title"><a href="/blog/konten/{{ $p->id }}">{{ $p->judul}}</a> </p>
 
-                </div>
+                </div>  
+            </a>
+                
             @endforeach
             <!-- @yield('side-menu') -->
 
@@ -61,7 +65,7 @@
         </div>
         <div class="column bottom">
             <div class="row">
-                <p><a href="./index.html">&copyRumahtani.com</a></p>
+                <p><a href="{{ url('/') }}">&copyRumahtani.com</a></p>
             </div>
             <div class="row bawah">
                 <p><a href="{{ url('/') }}#beranda" class="mr-2">Beranda</a></p>

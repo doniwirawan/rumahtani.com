@@ -34,4 +34,14 @@ class HomeController extends Controller
         
         return view('blog',['artikel' => $artikel ]);
     }
+    public function konten($id)
+        {
+
+            // mengambil data pegawai berdasarkan id yang dipilih
+            $artikel = DB::table('artikel')->where('id',$id)->get();
+            // passing data pegawai yang didapat ke view edit.blade.php
+            return view('konten',['artikel' => $artikel]);
+            
+        
+        }
 }
