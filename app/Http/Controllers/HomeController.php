@@ -24,13 +24,15 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $artikel = DB::table('artikel')->paginate(4);
+        $artikel = DB::table('articles')->paginate(4);
+        // $artikelfull = DB::table('artikel')->get();
         
         return view('beranda',['artikel' => $artikel ]);
+        // return view('beranda',['artikefull' => $artikelfull ]);
     }
     public function blog()
     {
-        $artikel = DB::table('artikel')->paginate(4);
+        $artikel = DB::table('articles')->paginate(4);
         
         return view('blog',['artikel' => $artikel ]);
     }
@@ -38,7 +40,7 @@ class HomeController extends Controller
         {
 
             // mengambil data pegawai berdasarkan id yang dipilih
-            $artikel = DB::table('artikel')->where('id',$id)->get();
+            $artikel = DB::table('articles')->where('id',$id)->get();
             // passing data pegawai yang didapat ke view edit.blade.php
             return view('konten',['artikel' => $artikel]);
             

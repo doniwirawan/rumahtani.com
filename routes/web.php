@@ -19,6 +19,12 @@ use App\Http\Controllers\HomeController;
 Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('berandax ga ngaruh');
 Route::get('/blog', [App\Http\Controllers\HomeController::class, 'blog'])->name('blogx ga ngaruh');
 Route::get('/blog/konten/{id}', [App\Http\Controllers\HomeController::class, 'konten'])->name('kontenx ga ngaruh');
+Route::middleware('auth:admin')->group(function(){
+  // Tulis routemu di sini.
+  Route::get('admin/login', 'Auth\AdminAuthController@getLogin')->name('admin.login');
+});
+Route::get('admin/login', 'Auth\AdminAuthController@getLogin')->name('admin.login');
+Route::post('admin/login', 'Auth\AdminAuthController@postLogin');
 // Route::get('/admin_konten/edit/{id}', [App\Http\Controllers\HomeController::class, 'edit'])->name('edit');
 
 

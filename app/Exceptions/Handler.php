@@ -2,6 +2,7 @@
 
 namespace App\Exceptions;
 
+use Illuminate\Support\Arr;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
 use Throwable;
 
@@ -37,4 +38,20 @@ class Handler extends ExceptionHandler
             //
         });
     }
+    // protected function unauthenticated($request, AuthenticationException $exception)
+    // {
+    //     if ($request->expectsJson()) {
+    //         return response()->json(['error' => 'Unauthenticated.'], 401);
+    //     }
+
+    //     $guard = Arr::get($exception->guards(), 0);
+
+    //     $route = 'login';
+
+    //     if ($guard == 'admin') {
+    //         $route = 'admin.login';
+    //     }
+
+    //     return redirect()->route($route);
+    // }
 }
